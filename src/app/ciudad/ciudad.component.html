@@ -1,0 +1,25 @@
+<div class="card border-primary mb-3">
+  <div class="card-header">Ciudades</div>
+  <div class="card-body text-primary">
+    <h5 class="card-title">Listado de ciudad</h5>
+    <div class="my-2 text-left">
+      <button class="btn btn-rounded btn-primary" type="button" [routerLink] = "['/ciudades/crear']">Crear Ciudad</button>
+    </div>
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th>Id Ciudad</th>
+          <th>Ciudad</th>
+          <th>Departamento</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let ciudad of ciudades" >
+          <td>{{ ciudad.codCiudad }}</td>
+          <td>{{ ciudad.ciudad }}</td>
+          <td>{{ ciudad.departamento }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+<div class="card border-primary mb-3">
+  <div class="card-header">Lugar de Votación</div>
+  <div class="card-body text-primary">
+    <h5 class="card-title">Listado de Lugares de Votación</h5>
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th>Id Lugar</th>
+          <th>Lugar</th>
+          <th>Dirección</th>
+          <th>Ciudad</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let lugar of lugares" >
+          <td>{{ lugar.codLugarVoto }}</td>
+          <td>{{ lugar.nombreLugar }}</td>
+          <td>{{ lugar.direccionVoto }}</td>
+          <td>{{ lugar.ciudad }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
